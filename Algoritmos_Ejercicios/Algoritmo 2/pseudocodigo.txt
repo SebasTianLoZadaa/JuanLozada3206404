@@ -1,0 +1,9 @@
+Algoritmo SumaHastaN
+    Escribir "Ingrese un número N"
+    Leer N
+    suma ← 0
+    Para i desde 1 hasta N hacer
+        suma ← suma + i
+    Fin Para
+    Escribir "La suma es", suma
+FinAlgoritmo

@@ -1,0 +1,11 @@
+Algoritmo BuscarNumeroEnLista
+    Crear lista de 20 números aleatorios entre 1 y 100
+    Escribir "Lista generada:", lista
+    Escribir "Ingrese el número a buscar"
+    Leer objetivo
+    Si objetivo está en lista Entonces
+        Escribir "Número encontrado en la posición:", posición de objetivo en lista
+    Sino
+        Escribir "Número no encontrado"
+    Fin Si
+FinAlgoritmo

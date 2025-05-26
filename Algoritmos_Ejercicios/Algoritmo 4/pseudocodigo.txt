@@ -1,0 +1,15 @@
+Algoritmo SumaDeParesEntreDosNumeros
+    Escribir "Ingrese el primer número"
+    Leer A
+    Escribir "Ingrese el segundo número"
+    Leer B
+    suma ← 0
+    inicio ← Mínimo(A, B)
+    fin ← Máximo(A, B)
+    Para i desde inicio hasta fin hacer
+        Si i MOD 2 = 0 Entonces
+            suma ← suma + i
+        Fin Si
+    Fin Para
+    Escribir "La suma de pares es", suma
+FinAlgoritmo

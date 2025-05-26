@@ -1,0 +1,7 @@
+Algoritmo NumeroMayorYFrecuencia
+    Crear lista de 20 números aleatorios entre 1 y 100
+    Escribir "Lista generada:", lista
+    mayor ← máximo valor en la lista
+    frecuencia ← cantidad de veces que aparece el mayor
+    Escribir "El número mayor es", mayor, "y aparece", frecuencia, "veces"
+FinAlgoritmo

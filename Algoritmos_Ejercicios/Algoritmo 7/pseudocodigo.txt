@@ -1,0 +1,12 @@
+Algoritmo ContarAparicionesEnLista
+    Crear lista de 20 números aleatorios entre 1 y 100
+    Escribir "Lista generada:", lista
+    Escribir "Ingrese el número a buscar"
+    Leer objetivo
+    contador ← número de veces que objetivo aparece en lista
+    Si contador > 0 Entonces
+        Escribir "El número aparece", contador, "veces"
+    Sino
+        Escribir "Número no encontrado"
+    Fin Si
+FinAlgoritmo

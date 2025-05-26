@@ -1,0 +1,10 @@
+Algoritmo OrdenarCincoNumeros
+    Crear lista vacía llamada numeros
+    Para i desde 1 hasta 5 hacer
+        Escribir "Ingrese el número", i
+        Leer num
+        Agregar num a la lista numeros
+    Fin Para
+    Ordenar lista numeros de mayor a menor
+    Escribir "Números ordenados:", numeros
+FinAlgoritmo

@@ -1,0 +1,7 @@
+Algoritmo ParesEntre100y1000
+    Para i desde 100 hasta 1000 hacer
+        Si i MOD 2 = 0 Entonces
+            Escribir i
+        Fin Si
+    Fin Para
+FinAlgoritmo
