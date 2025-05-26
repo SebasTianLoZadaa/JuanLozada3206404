@@ -5,6 +5,20 @@ def suma_pares_entre(a, b):
             suma += i
     return suma
 
-a = int(input("Ingrese el primer número: "))
-b = int(input("Ingrese el segundo número: "))
-print("La suma de pares es:", suma_pares_entre(a, b))
+def pedir_numero(mensaje):
+    while True:
+        entrada = input(mensaje)
+        if entrada.isdigit():
+            n = int(entrada)
+            if n >= 0:
+                return n
+            else:
+                print("El número debe ser positivo o cero.")
+        else:
+            print("Entrada inválida, por favor ingrese un número entero positivo.")
+            
+a = pedir_numero("Ingrese el primer número: ")
+b = pedir_numero("Ingrese el segundo número: ")
+
+resultado = suma_pares_entre(a, b)
+print("La suma de pares entre", a, "y", b, "es:", resultado)
