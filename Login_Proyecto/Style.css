@@ -78,7 +78,7 @@ section {
 }
 
 .intro .boton:hover {
-  background: #e60026;
+  background: #F8E663;
   transform: scale(1.05);
 }
 
@@ -181,4 +181,162 @@ footer {
   .card {
     width: 90%;
   }
+}
+
+.contenedor_Futbol {
+  width: 90%;
+  max-width: 900px;
+  margin: 2em auto;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 2em;
+  transition: transform 0.3s;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.contenedor_Futbol:hover {
+  transform: translateY(-5px);
+  background-color: #FEFBE7;
+}
+
+.contenedor_Futbol img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 1em;
+}
+
+.galeria {
+  background: linear-gradient(to bottom right, #d9eaff, #f9f9f9);
+  padding: 3em 0;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.contenedor-general {
+  display: flex;                 
+  justify-content: space-between; 
+  align-items: flex-start;        
+  gap: 3em;                    
+  flex-wrap: wrap;               
+  padding: 2em;
+}
+
+.contenedor_Futbol {
+  flex: 1;
+  max-width: 48%;
+}
+
+
+.contenedor_Historia {
+  flex: 1;
+  max-width: 48%;
+}
+
+.contenedor_Historia:hover {
+  transform: translateY(-5px);
+  background-color: #FEFBE7;
+}
+
+
+.contenedor_Futbol img,
+.contenedor_Historia img {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 1em;
+}
+
+.contenedor_Historia {
+  width: 90%;
+  max-width: 900px;
+  margin: 2em auto;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 2em;
+  transition: transform 0.3s;
+  margin-left: 0;
+  margin-right: auto;
+
+}
+
+
+
+.tabla_Colombia {
+  width: 100%;
+  text-align: center;
+  margin: 3em auto;
+  background: #ffffff;
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tabla_Colombia h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 1em;
+  background: linear-gradient(90deg, #000000, #000000);
+  -webkit-background-clip: text ;
+  -webkit-text-fill-color: transparent;
+}
+
+.tabla_Colombia table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1.1em;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.tabla_Colombia th {
+  background-color: #FC965F
+;
+  color: white;
+  padding: 12px;
+  letter-spacing: 0.5px;
+}
+
+.tabla_Colombia td {
+  padding: 10px;
+  background-color: #fafafa;
+}
+
+.tabla_Colombia tr:nth-child(even) td {
+  background-color: #f1f1f1;
+}
+
+.tabla_Colombia tr:hover td {
+  background-color: #e8e8ff;
+  transition: background-color 0.3s ease;
+}
+
+.tabla_Colombia .nota {
+  font-size: 0.9em;
+  font-style: italic;
+  color: #666;
+  margin-top: 1em;
+}
+
+.iframe_container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  margin-top: 2em;
+}
+
+.Titulo_video {
+  text-align: center;
+  color: #222;
+  border-radius: 10px;
+ 
 }
