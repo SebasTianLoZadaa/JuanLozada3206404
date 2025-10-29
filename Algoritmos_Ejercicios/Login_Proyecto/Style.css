@@ -1,0 +1,646 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom right, #fffbf0, #fffefc);
+  color: #222;
+}
+
+/* ENCABEZADO */
+header {
+  background: linear-gradient(90deg, #f7ce46, #0b5394, #e60026);
+  color: white;
+  text-align: center;
+  padding: 1.5em 1em;
+  border-bottom: 5px solid #fff;
+}
+
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  animation: entrada 1.5s ease;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1em;
+  gap: 1.5em;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffe600;
+  text-shadow: 0 0 5px white;
+}
+
+/* SECCIONES */
+section {
+  padding: 3em 1.5em;
+  text-align: center;
+}
+
+.intro {
+  background: linear-gradient(to bottom right, #fff5cc, #ffe6e6);
+  border-radius: 20px;
+  margin: 2em auto;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  animation: fadeIn 1.5s ease;
+}
+
+.intro .boton {
+  display: inline-block;
+  background: #0b5394;
+  color: white;
+  padding: 0.8em 1.5em;
+  border-radius: 30px;
+  margin-top: 1em;
+  text-decoration: none;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.intro .boton:hover {
+  background: #F8E663;
+  transform: scale(1.05);
+}
+
+/* CONTENEDORES DE TEXTO + IMAGEN */
+.contenedor {
+  width: 90%;
+  max-width: 900px;
+  margin: 2em auto;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 2em;
+  transition: transform 0.3s;
+}
+
+.contenedor:hover {
+  transform: translateY(-5px);
+}
+
+.contenedor img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 1em;
+}
+
+/* GALERÍA DE LUGARES */
+.galeria {
+  background: linear-gradient(to bottom right, #d9eaff, #f9f9f9);
+  padding: 3em 0;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.card {
+  width: 280px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 1em;
+  background: #0b5394;
+  color: white;
+  border-radius: 0 0 15px 15px;
+}
+
+/* FOOTER */
+footer {
+  background: #0b5394;
+  color: white;
+  text-align: center;
+  padding: 2em;
+  margin-top: 2em;
+  border-top: 5px solid #f7ce46;
+}
+
+/* ANIMACIONES */
+@keyframes entrada {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* RESPONSIVO */
+@media (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.8em;
+  }
+
+  .imagenes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+
+.contenedor_Futbol {
+  width: 90%;
+  max-width: 900px;
+  margin: 2em auto;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 2em;
+  transition: transform 0.3s;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.contenedor_Futbol:hover {
+  transform: translateY(-5px);
+  background-color: #FEFBE7;
+}
+
+.contenedor_Futbol img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 1em;
+}
+
+.galeria {
+  background: linear-gradient(to bottom right, #d9eaff, #f9f9f9);
+  padding: 3em 0;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.contenedor-general {
+  display: flex;                 
+  justify-content: space-between; 
+  align-items: flex-start;        
+  gap: 3em;                    
+  flex-wrap: wrap;               
+  padding: 2em;
+}
+
+.contenedor_Futbol {
+  flex: 1;
+  max-width: 48%;
+}
+
+
+.contenedor_Historia {
+  flex: 1;
+  max-width: 48%;
+}
+
+.contenedor_Historia:hover {
+  transform: translateY(-5px);
+  background-color: #FEFBE7;
+}
+
+
+.contenedor_Futbol img,
+.contenedor_Historia img {
+  width: 100%;
+  border-radius: 15px;
+  margin-top: 1em;
+}
+
+.contenedor_Historia {
+  width: 90%;
+  max-width: 900px;
+  margin: 2em auto;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 2em;
+  transition: transform 0.3s;
+  margin-left: 0;
+  margin-right: auto;
+
+}
+
+
+
+.tabla_Colombia {
+  width: 100%;
+  text-align: center;
+  margin: 3em auto;
+  background: #ffffff;
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tabla_Colombia h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 1em;
+  background: linear-gradient(90deg, #000000, #000000);
+  -webkit-background-clip: text ;
+  -webkit-text-fill-color: transparent;
+}
+
+.tabla_Colombia table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1.1em;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.tabla_Colombia th {
+  background-color: #FC965F
+;
+  color: white;
+  padding: 12px;
+  letter-spacing: 0.5px;
+}
+
+.tabla_Colombia td {
+  padding: 10px;
+  background-color: #fafafa;
+}
+
+.tabla_Colombia tr:nth-child(even) td {
+  background-color: #f1f1f1;
+}
+
+.tabla_Colombia tr:hover td {
+  background-color: #e8e8ff;
+  transition: background-color 0.3s ease;
+}
+
+.tabla_Colombia .nota {
+  font-size: 0.9em;
+  font-style: italic;
+  color: #666;
+  margin-top: 1em;
+}
+
+.iframe_container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  margin-top: 2em;
+}
+
+.Titulo_video {
+  text-align: center;
+  color: #222;
+  border-radius: 10px;
+ 
+}
+
+.formulario {
+  background: linear-gradient(to bottom right, #fffaf0, #ffe6cc);
+  padding: 2em;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 700px;
+  margin: 3em auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.formulario h2 {
+  color: #333;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+.formulario p {
+  color: #555;
+  margin-bottom: 1.5em;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1em;
+}
+
+.formulario label {
+  text-align: left;
+  color: #444;
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 0.8em;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 1em;
+}
+
+.formulario button {
+  background-color: #ff9933;
+  color: white;
+  font-size: 1.1em;
+  padding: 0.8em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: #e68a00;
+}
+
+.Comidas_Tipicas{
+	
+	letter-spacing: 1.5px;
+}
+
+.Comidas_Tipicas {
+  background: linear-gradient(to right, #fffbe6, #ffe6cc);
+  border-radius: 20px;
+  padding: 20px 40px;
+  margin: 2em auto;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.Comidas_Tipicas h2 {
+  color: #b85c00;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.Comidas_Tipicas ul {
+  list-style: none; /* Quita los puntos */
+  padding: 0;
+}
+
+.Comidas_Tipicas li {
+  background-color: #fff;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.Comidas_Tipicas li:hover {
+  background-color: #fff3e0;
+  transform: scale(1.03);
+}
+
+.java {
+  color: tomato;
+}
+
+.Java {
+  background: linear-gradient(to right, #cce5ff, #e6f0ff);
+  border-radius: 15px;
+  padding: 20px;
+  width: 50%;
+  margin: 30px auto;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.Java h2 {
+  color: #004080;
+}
+
+.Java button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Java button:hover {
+  background-color: #0056b3;
+}
+
+#demo {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+#div1, #div2 {
+  float: left;
+  width: 100px;
+  height: 35px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+/* Sección de arrastrar bandera */
+.drag-section {
+  background: linear-gradient(to bottom right, #fffbea, #e6f7ff);
+  border-radius: 20px;
+  margin: 3em auto;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.drag-section h2 {
+  color: #003366;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.drag-section p {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* Contenedor de los cuadros */
+.drag-section .contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Cuadros de destino */
+#div1, #div2 {
+  width: 150px;
+  height: 100px;
+  border: 2px dashed #007bff;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+#div1:hover, #div2:hover {
+  border-color: #ffcc00;
+  background-color: #fff5cc;
+  transform: scale(1.05);
+}
+
+/* Imagen */
+.drag-section img {
+  cursor: grab;
+  transition: transform 0.2s ease;
+}
+
+.drag-section img:active {
+  cursor: grabbing;
+  transform: scale(1.1);
+}
+
+.checkbox-visitar {
+  background: linear-gradient(to bottom right, #fff5cc, #ffe6e6);
+  border-radius: 20px;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.checkbox-visitar h3 {
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.checkbox-visitar label {
+  font-size: 18px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-visitar input[type="checkbox"] {
+  transform: scale(1.5);
+  accent-color: #ffd700; /* color amarillo bandera */
+  margin-right: 8px;
+}
+
+.canvas-section {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  background: linear-gradient(to bottom right, #fff5cc, #ffe6e6);
+  border-radius: 20px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+canvas {
+  border: 2px solid #222;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+canvas:hover {
+  transform: scale(1.05);
+}
+
+.audio-section {
+    text-align: center;
+    background: linear-gradient(to right, #ffeaa7, #fab1a0);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  .audio-section h2 {
+    color: #2d3436;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 10px;
+  }
+
+  .audio-section p {
+    font-size: 1.1em;
+    color: #444;
+  }
+
+  .audio-player {
+    margin-top: 20px;
+  }
+
+  #playBtn {
+    background-color: #0984e3;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  #playBtn:hover {
+    background-color: #74b9ff;
+  }
